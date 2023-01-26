@@ -20,10 +20,16 @@ Route::get('/', function () {
 use App\Http\Controllers\Tp1VilleController;
 use App\Http\Controllers\Tp1EtudiantController;
 
-route::get('etudiant', [Tp1EtudiantController::class, 'index'])->name('site.index');
+route::get('etudiant', [Tp1EtudiantController::class, 'index'])->name('etudiant.index');
 
-route::get('etudiant/{tp1Etudiant}', [Tp1EtudiantController::class, 'show'])->name('site.show');
+route::get('etudiant/{tp1Etudiant}', [Tp1EtudiantController::class, 'show'])->name('etudiant.show');
 
-route::get('etudiant-create', [Tp1EtudiantController::class, 'create'])->name('site.create');
+route::get('etudiant-create', [Tp1EtudiantController::class, 'create'])->name('etudiant.create');
 
 route::post('etudiant-create', [Tp1EtudiantController::class, 'store']);
+
+route::get('etudiant-edit/{tp1Etudiant}', [Tp1EtudiantController::class, 'edit'])->name('etudiant.edit');
+
+route::put('etudiant-edit/{tp1Etudiant}', [Tp1EtudiantController::class, 'update']);
+
+route::delete('etudiant-edit/{tp1Etudiant}', [Tp1EtudiantController::class, 'destroy']);

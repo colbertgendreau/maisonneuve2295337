@@ -12,7 +12,7 @@
                             <ul>
                                 @forelse ($etudiants as $etudiant)
                                 <li class="pt-1">
-                                <a href="{{ route('site.show', $etudiant->id)}}">
+                                <a href="{{ route('etudiant.show', $etudiant->id)}}">
                                         {{$etudiant->nom}}   
                                     </a>
                                 </li>

@@ -16,7 +16,7 @@ class Tp1EtudiantController extends Controller
     {
         $etudiants = Tp1Etudiant::all();  // pour tout montrer
 
-        return view('site.index', ['etudiants'=>$etudiants]);
+        return view('etudiant.index', ['etudiants'=>$etudiants]);
     }
 
     /**
@@ -26,7 +26,7 @@ class Tp1EtudiantController extends Controller
      */
     public function create()
     {
-        return view('site.create');
+        return view('etudiant.create');
     }
 
     /**
@@ -47,7 +47,7 @@ class Tp1EtudiantController extends Controller
             'user_id' => $request -> user_id
         ]);
 
-        return redirect(route('site.show', $newEtudiant->id));
+        return redirect(route('etudiant.show', $newEtudiant->id));
     }
 
     /**
@@ -58,7 +58,7 @@ class Tp1EtudiantController extends Controller
      */
     public function show(Tp1Etudiant $tp1Etudiant)
     {
-        return view('site.show', ['tp1Etudiant'=>$tp1Etudiant]);
+        return view('etudiant.show', ['tp1Etudiant'=>$tp1Etudiant]);
     }
 
     /**
@@ -69,7 +69,7 @@ class Tp1EtudiantController extends Controller
      */
     public function edit(Tp1Etudiant $tp1Etudiant)
     {
-        //
+        return view('etudiant.edit', ['tp1Etudiant'=>$tp1Etudiant]);
     }
 
     /**
@@ -81,7 +81,17 @@ class Tp1EtudiantController extends Controller
      */
     public function update(Request $request, Tp1Etudiant $tp1Etudiant)
     {
-        //
+        $tp1Etudiant->update([
+            'nom' => $request -> nom,
+            'adresse' => $request -> adresse,
+            'email' => $request -> email,
+            'phone' => $request -> phone,
+            'date_de_naissance' => $request -> date_de_naissance,
+            'ville_id' => $request -> ville_id,
+            'user_id' => $request -> user_id
+        ]);
+
+        return redirect(route('etudiant.show', $tp1Etudiant->id));
     }
 
     /**
@@ -92,6 +102,7 @@ class Tp1EtudiantController extends Controller
      */
     public function destroy(Tp1Etudiant $tp1Etudiant)
     {
-        //
+        $tp1Etudiant->delete();
+        return redirect(route('etudiant.index'));
     }
 }
