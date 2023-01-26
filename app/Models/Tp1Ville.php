@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Tp1Ville extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'nom',
+        'user_id'
+    ];
+
+
 }
