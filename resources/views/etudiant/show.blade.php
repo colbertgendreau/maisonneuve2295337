@@ -15,22 +15,19 @@
                 <hr>
                 <div class="card">
                     <div class="card-header">
-                        {{$tp1Etudiant->nom}}
+                        Etudiant numero {{$tp1Etudiant->id}}
                     </div>
                     <div class="card-body">
-                        <p>
-                        {{$tp1Etudiant->id}}
-                        {{$tp1Etudiant->adresse}}
-                        {{$tp1Etudiant->phone}}
-                        {{$tp1Etudiant->email}}
-                        {{$tp1Etudiant->date_de_naissance}}
-                        {{$tp1Etudiant->ville_id}}
-                        {{$tp1Etudiant->user_id}}
-                    </p>    
-                </div>
-                <div class="card-footer">
-                    {{$tp1Etudiant->created_at}}
-                    {{$tp1Etudiant->updated_at}}
+                        <p><strong>Nom : </strong>{{$tp1Etudiant->nom}}</p>
+                        <p><strong>Phone : </strong>{{$tp1Etudiant->phone}}</p>
+                        <p><strong>Email : </strong>{{$tp1Etudiant->email}}</p>
+                        <p><strong>Date De Naissance : </strong>{{$tp1Etudiant->date_de_naissance}}</p>
+                        <p><strong>Adresse : </strong>{{$tp1Etudiant->adresse}}</p>
+                        <p><strong>Ville : </strong>{{$tp1Etudiant->tp1HasVille->nom}}</p>
+                    </div>
+                    <div class="card-footer">
+                        <p><strong>Enregistré au : </strong>{{$tp1Etudiant->created_at}}</p>
+                        <p><strong>Modifié au : </strong>{{$tp1Etudiant->updated_at}}</p>
                     
                 </div>
                 </div>

@@ -18,4 +18,9 @@ class Tp1Etudiant extends Model
         'ville_id',
     ];
 
+    // pour linker les 2 tables (comme un inner join)
+    public function tp1HasVille() {
+        return $this->hasOne('App\Models\Tp1Ville', 'id', 'ville_id');
+    }
+    
 }

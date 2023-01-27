@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Tp1Etudiant;
+use App\Models\Tp1Ville;
 use Illuminate\Http\Request;
 
 class Tp1EtudiantController extends Controller
@@ -26,7 +27,8 @@ class Tp1EtudiantController extends Controller
      */
     public function create()
     {
-        return view('etudiant.create');
+        $villes = Tp1Ville::all();
+        return view('etudiant.create', ['villes'=>$villes]);
     }
 
     /**
@@ -43,8 +45,7 @@ class Tp1EtudiantController extends Controller
             'email' => $request -> email,
             'phone' => $request -> phone,
             'date_de_naissance' => $request -> date_de_naissance,
-            'ville_id' => $request -> ville_id,
-            'user_id' => $request -> user_id
+            'ville_id' => $request -> ville_id
         ]);
 
         return redirect(route('etudiant.show', $newEtudiant->id));
