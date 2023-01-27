@@ -70,7 +70,8 @@ class Tp1EtudiantController extends Controller
      */
     public function edit(Tp1Etudiant $tp1Etudiant)
     {
-        return view('etudiant.edit', ['tp1Etudiant'=>$tp1Etudiant]);
+        $villes = Tp1Ville::all();
+        return view('etudiant.edit', ['tp1Etudiant'=>$tp1Etudiant], ['villes'=>$villes]);
     }
 
     /**

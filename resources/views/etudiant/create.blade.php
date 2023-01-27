@@ -20,7 +20,7 @@
                     </div>
                     <div class="card-body">
                         <div class="control-group col-12">
-                            <label for="nom">Nom</label>
+                            <label for="nom">Prénom et Nom</label>
                             <input type="text" id="nom" name="nom" class="form-control">
                         </div>
                         <div class="control-group col-12">
@@ -40,7 +40,7 @@
                             <input type="text" id="adresse" name="adresse" class="form-control">
                         </div>
                         <div class="control-group col-12">                            
-                            <label for="ville-id">Ville</label>
+                            <label for="ville_id">Ville</label>
                             <select class="form-select" aria-label="Default select example" name="ville_id">
                                 <option selected>Selectionnez votre ville</option>
                                 @foreach ($villes as $ville)
