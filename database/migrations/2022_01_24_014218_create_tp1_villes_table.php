@@ -16,8 +16,7 @@ class CreateTp1VillesTable extends Migration
         Schema::create('tp1_villes', function (Blueprint $table) {
             $table->id();
 
-            $table->string('nom', 50);
-            $table->integer('ville_id');
+            $table->text('nom');
 
             $table->timestamps();
         });

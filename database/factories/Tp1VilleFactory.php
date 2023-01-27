@@ -2,8 +2,11 @@
 
 namespace Database\Factories;
 
+// use App\Models\Tp1Ville;
+
+
 use Illuminate\Database\Eloquent\Factories\Factory;
-use App\Models\Tp1Ville;
+use Illuminate\Support\Str;
 
 class Tp1VilleFactory extends Factory
 {
@@ -15,8 +18,7 @@ class Tp1VilleFactory extends Factory
     public function definition()
     {
         return [
-            'nom' => $this->faker->city, //Generates a fake city
-            'ville_id' => Tp1Ville::factory() //Generates a Ville from factory and extracts id
+            'nom'=>$this->faker->city(),
         ];
     }
 }

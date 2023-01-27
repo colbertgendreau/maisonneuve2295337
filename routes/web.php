@@ -13,12 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 use App\Http\Controllers\Tp1VilleController;
 use App\Http\Controllers\Tp1EtudiantController;
+
+route::get('/', [Tp1EtudiantController::class, 'index'])->name('etudiant.index');
 
 route::get('etudiant', [Tp1EtudiantController::class, 'index'])->name('etudiant.index');
 

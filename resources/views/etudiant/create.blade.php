@@ -43,10 +43,6 @@
                             <label for="ville_id">ville_id</label>
                             <input type="text" id="ville_id" name="ville_id" class="form-control">
                         </div>
-                        <div class="control-group col-12">
-                            <label for="user_id">user_id</label>
-                            <input type="text" id="user_id" name="user_id" class="form-control">
-                        </div>
                     </div>
                     <div class="card-footer text-end">
                         <input type="submit" value="sauvegarder" class="btn btn-success">

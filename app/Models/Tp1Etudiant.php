@@ -16,7 +16,6 @@ class Tp1Etudiant extends Model
         'phone',
         'date_de_naissance',
         'ville_id',
-        'user_id'
     ];
 
 }

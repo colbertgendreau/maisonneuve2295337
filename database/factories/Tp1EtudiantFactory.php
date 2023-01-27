@@ -2,6 +2,10 @@
 
 namespace Database\Factories;
 
+
+use App\Models\Tp1Etudiant;
+use App\Models\Tp1Ville;
+
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class Tp1EtudiantFactory extends Factory
@@ -14,7 +18,12 @@ class Tp1EtudiantFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nom' => $this->faker->name(),
+            'adresse' => $this->faker->streetAddress(),
+            'phone' => $this->faker->phoneNumber(),
+            'email' => $this->faker->unique()->safeEmail(),
+            'date_de_naissance' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
+            'ville_id' => $this->faker->numberBetween(1, 15),
         ];
     }
 }
