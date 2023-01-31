@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-12 text-center mt-2">
             <h1 class="display-one">
-                Creer un Etudiant
+                Créer un Etudiant
             </h1>
         </div>
     </div>

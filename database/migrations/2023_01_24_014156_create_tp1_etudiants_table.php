@@ -22,9 +22,6 @@ class CreateTp1EtudiantsTable extends Migration
             $table->string('email', 100)->unique();
             $table->date('date_de_naissance');
             
-            // $table->integer('ville_id')->unsigned();
-            // $table->foreign('ville_id')->references('id')->on('tp1_villes');
-
             $table->foreignId('ville_id')->constrained('tp1_villes');
 
             $table->timestamps();

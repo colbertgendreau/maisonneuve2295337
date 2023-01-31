@@ -28,32 +28,33 @@
                     <div class="card-footer">
                         <p><strong>Enregistré au : </strong>{{$tp1Etudiant->created_at}}</p>
                         <p><strong>Modifié au : </strong>{{$tp1Etudiant->updated_at}}</p>
-                    
-                </div>
-                </div>
-            </div>
-            <div class="row mb-2">
-                <div class="col-md-12 text-center pt-5">
-                    <a href="{{ route('etudiant.index')}}" class="btn btn-outline-primary">
-                        Voir tout les articles
-                    </a>
+
+                    </div>
                 </div>
             </div>
-            <hr>
-            <div class="row text-center mb-2">
+            <div class="row text-center mb-2 mt-2">
                 <div class="col-6">
                     <a href="{{ route('etudiant.edit', $tp1Etudiant->id)}}" class="btn btn-success">Mettre a jour</a>
                 </div>
                 <div class="col-6">
                     
-                <form action="{{ route('etudiant.edit', $tp1Etudiant->id)}}" method="POST">
-                @csrf
-                @method('delete')
-                <input type="submit" class="btn btn-danger" value="Effacer">
-            </form>
+                    <form action="{{ route('etudiant.edit', $tp1Etudiant->id)}}" method="POST">
+                        @csrf
+                        @method('delete')
+                        <input type="submit" class="btn btn-danger" value="Effacer">
+                    </form>
                 </div>
             </div>
+            <hr>
+            <div class="row mb-2">
+                <div class="col-md-12 text-center pt-5">
+                    <a href="{{ route('etudiant.index')}}" class="btn btn-outline-primary">
+                        retourner a tous les articles
+                    </a>
+                </div>
             </div>
+
+        </div>
     </div>
 </div>
 

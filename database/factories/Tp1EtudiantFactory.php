@@ -20,9 +20,9 @@ class Tp1EtudiantFactory extends Factory
         return [
             'nom' => $this->faker->name(),
             'adresse' => $this->faker->streetAddress(),
-            'phone' => $this->faker->phoneNumber(),
+            'phone' => $this->faker->numerify('###-###-####'),
             'email' => $this->faker->unique()->safeEmail(),
-            'date_de_naissance' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
+            'date_de_naissance' => $this->faker->date($format = 'Y-m-d', $max = '2005-01-01'),
             'ville_id' => $this->faker->numberBetween(1, 15),
         ];
     }
