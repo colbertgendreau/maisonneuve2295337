@@ -1,15 +1,16 @@
 @extends('layouts.master')
 @section('title', 'Mettre a Jour')
+@section('active_etudiants', 'active')
 @section('content')
 
+<!-- bradcam_area_start -->
+<div class="bradcam_area breadcam_bg_2">
+    <h3>Modifier un Étudiant</h3>
+</div>
+<!-- bradcam_area_end -->
+
+
 <div class="container">
-    <div class="row">
-        <div class="col-12 text-center mt-2">
-            <h1 class="display-one">
-                Modifier un Etudiant
-            </h1>
-        </div>
-    </div>
     <div class="row">
         <div class="col-12">
             <div class="card">

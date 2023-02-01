@@ -2,6 +2,12 @@
 @section('title', 'Un Etudiant')
 @section('content')
 
+<!-- bradcam_area_start -->
+<div class="bradcam_area breadcam_bg_2">
+    <h3>Fiche d'Information</h3>
+</div>
+<!-- bradcam_area_end -->
+
 
 <div class="container">
     <div class="row">
@@ -37,7 +43,7 @@
                     <a href="{{ route('etudiant.edit', $tp1Etudiant->id)}}" class="btn btn-success">Mettre a jour</a>
                 </div>
                 <div class="col-6">
-                    
+
                     <form action="{{ route('etudiant.edit', $tp1Etudiant->id)}}" method="POST">
                         @csrf
                         @method('delete')
@@ -49,7 +55,7 @@
             <div class="row mb-2">
                 <div class="col-md-12 text-center pt-5">
                     <a href="{{ route('etudiant.index')}}" class="btn btn-outline-primary">
-                        retourner a tous les articles
+                        Retourner a tous les étudiants
                     </a>
                 </div>
             </div>

@@ -1,15 +1,16 @@
 @extends('layouts.master')
 @section('title', 'Ajouter un Etudiant')
+@section('active_ajouter', 'active')
 @section('content')
 
-<div class="container">
-    <div class="row">
-        <div class="col-12 text-center mt-2">
-            <h1 class="display-one">
-                Créer un Etudiant
-            </h1>
-        </div>
+
+    <!-- bradcam_area_start -->
+    <div class="bradcam_area breadcam_bg_1">
+        <h3>Ajouter un Étudiant</h3>
     </div>
+    <!-- bradcam_area_end -->
+
+    <div class="container">
     <div class="row">
         <div class="col-12">
             <div class="card">
@@ -57,7 +58,5 @@
         </div>
     </div>
 </div>
-
-
 
 @endsection('content')

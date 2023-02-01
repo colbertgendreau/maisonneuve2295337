@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Tp1VilleController;
 use App\Http\Controllers\Tp1EtudiantController;
 
-route::get('/', [Tp1EtudiantController::class, 'index'])->name('etudiant.index');
+route::get('/', [Tp1EtudiantController::class, 'accueil'])->name('etudiant.index');
 
-route::get('etudiant', [Tp1EtudiantController::class, 'index'])->name('etudiant.index');
+route::get('etudiant', [Tp1EtudiantController::class, 'index'])->name('etudiant.etudiants');
 
 route::get('etudiant/{tp1Etudiant}', [Tp1EtudiantController::class, 'show'])->name('etudiant.show');
 

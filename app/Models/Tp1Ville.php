@@ -12,6 +12,4 @@ class Tp1Ville extends Model
     protected $fillable = [
         'nom',
     ];
-
-
 }

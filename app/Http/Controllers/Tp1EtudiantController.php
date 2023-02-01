@@ -13,11 +13,22 @@ class Tp1EtudiantController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function accueil()
     {
         $etudiants = Tp1Etudiant::all();  // pour tout montrer
 
         return view('etudiant.index', ['etudiants'=>$etudiants]);
+    }
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $etudiants = Tp1Etudiant::all();  // pour tout montrer
+
+        return view('etudiant.etudiants', ['etudiants'=>$etudiants]);
     }
 
     /**
