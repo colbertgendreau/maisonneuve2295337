@@ -116,6 +116,6 @@ class Tp1EtudiantController extends Controller
     public function destroy(Tp1Etudiant $tp1Etudiant)
     {
         $tp1Etudiant->delete();
-        return redirect(route('etudiant.index'));
+        return redirect(route('etudiant.etudiants'));
     }
 }

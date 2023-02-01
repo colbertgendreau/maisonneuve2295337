@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Les Etudiants')
+@section('title', 'Accueil')
 @section('active_accueil', 'active')
 @section('content')
 

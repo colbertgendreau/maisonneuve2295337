@@ -9,10 +9,6 @@
     <meta name="author" content="Colbert Gendreau">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.png') }}">
-    <!-- Place favicon.ico in the root directory -->
-
     <!-- CSS here -->
 
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
@@ -153,7 +149,7 @@
                         <p class="copy_right">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Website made by Colbert, based on a <a href="https://colorlib.com" target="_blank">Colorlib</a> template. For education purposes. Don't sue me, I'm broke.
+                            Website made by Colbert, based on a <a href="https://colorlib.com" target="_blank">Colorlib</a> template. For education purposes. Don't sue me, I'm broke. Icons from <a href="flaticon.com">Flaticon.</a>
                     </div>
                     <div class="col-xl-4 col-md-5 col-lg-3">
                         <div class="socail_links">
