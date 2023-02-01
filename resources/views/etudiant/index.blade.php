@@ -3,8 +3,7 @@
 @section('active_accueil', 'active')
 @section('content')
 
-
-    <!-- slider_area_start -->
+<!-- slider_area_start -->
     <div class="slider_area">
         <div class="slider_active owl-carousel">
             <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
@@ -59,8 +58,5 @@
         </div>
     </div>
     <!-- slider_area_end -->
-
-
-
 
 @endsection('content')

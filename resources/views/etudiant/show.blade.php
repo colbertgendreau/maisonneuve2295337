@@ -8,7 +8,6 @@
 </div>
 <!-- bradcam_area_end -->
 
-
 <div class="container">
     <div class="row">
         <div class="col-12 text-center pt-5">
@@ -43,7 +42,6 @@
                     <a href="{{ route('etudiant.edit', $tp1Etudiant->id)}}" class="btn btn-success">Mettre a jour</a>
                 </div>
                 <div class="col-6">
-
                     <form action="{{ route('etudiant.edit', $tp1Etudiant->id)}}" method="POST">
                         @csrf
                         @method('delete')
@@ -59,11 +57,8 @@
                     </a>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
-
-
 
 @endsection('content')

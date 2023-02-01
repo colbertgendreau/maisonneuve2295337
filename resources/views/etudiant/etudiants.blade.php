@@ -9,17 +9,11 @@
 </div>
 <!-- bradcam_area_end -->
 
-
 <div class="container col-12">
-
     <div class="row">
-
-
         @forelse ($etudiants as $etudiant)
 
-
         <div class="col-sm col-3">
-
             <div class="card mb-10">
                 <div class="card-header">Numero : {{$etudiant->id}}</div>
                 <div class="card-body">
@@ -29,14 +23,11 @@
                     <a href="{{ route('etudiant.show', $etudiant->id)}}" class="btn btn-primary">Fiche Complète</a>
                 </div>
             </div>
-
         </div>
         @empty
         <div>Aucun etudiant </div>
         @endforelse
-
     </div>
 </div>
-
 
 @endsection('content')

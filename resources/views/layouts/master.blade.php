@@ -5,16 +5,16 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>@yield('title')</title>
-    <meta name="description" content="">
+    <meta name="description" content="TP1 pour le cours de cadriciel web">
+    <meta name="author" content="Colbert Gendreau">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.png') }}">
     <!-- Place favicon.ico in the root directory -->
 
-
     <!-- CSS here -->
-    
+
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
@@ -30,10 +30,6 @@
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
     <!-- header-start -->
     <header>
         <div class="header-area ">
@@ -45,8 +41,8 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a class="@yield('active_accueil')" href="{{ route('etudiant.index')}}">Accueil</a></li>
-                                        <li><a class="@yield('active_etudiants')"href="{{ route('etudiant.etudiants')}}">Étudiants</a></li>
-                                        <li><a class="@yield('active_ajouter')"href="{{ route('etudiant.create')}}">Ajouter</a></li>
+                                        <li><a class="@yield('active_etudiants')" href="{{ route('etudiant.etudiants')}}">Étudiants</a></li>
+                                        <li><a class="@yield('active_ajouter')" href="{{ route('etudiant.create')}}">Ajouter</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -94,12 +90,8 @@
     </header>
     <!-- header-end -->
 
-    
     <!-- stuff a rentrer -->
     @yield('content') <!-- on appel content comme on veut (variable blade) -->
-
-
-    
     <!-- stuff a rentrer end -->
 
     <!-- footer -->
@@ -160,8 +152,8 @@
                     <div class="col-xl-8 col-md-7 col-lg-9">
                         <p class="copy_right">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Website made by Colbert, based on a <a href="https://colorlib.com" target="_blank">Colorlib</a> template. For education purposes. Don't sue me, I'm broke.
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Website made by Colbert, based on a <a href="https://colorlib.com" target="_blank">Colorlib</a> template. For education purposes. Don't sue me, I'm broke.
                     </div>
                     <div class="col-xl-4 col-md-5 col-lg-3">
                         <div class="socail_links">
@@ -189,9 +181,6 @@ Website made by Colbert, based on a <a href="https://colorlib.com" target="_blan
         </div>
     </footer>
 
-    <!-- link that opens popup -->
-
-
     <!-- JS here -->
     <script src="{{ asset('js/vendor/modernizr-3.5.0.min.js') }}"></script>
     <script src="{{ asset('js/vendor/jquery-1.12.4.min.js') }}"></script>
@@ -212,26 +201,22 @@ Website made by Colbert, based on a <a href="https://colorlib.com" target="_blan
     <script src="{{ asset('js/plugins.js') }}"></script>
     <script src="{{ asset('js/gijgo.min.js') }}"></script>
 
-
     <script src="{{ asset('js/main.js') }}"></script>
     <script>
         $('#datepicker').datepicker({
             iconsLibrary: 'fontawesome',
             icons: {
-             rightIcon: '<span class="fa fa-caret-down"></span>'
-         }
+                rightIcon: '<span class="fa fa-caret-down"></span>'
+            }
         });
         $('#datepicker2').datepicker({
             iconsLibrary: 'fontawesome',
             icons: {
-             rightIcon: '<span class="fa fa-caret-down"></span>'
-         }
+                rightIcon: '<span class="fa fa-caret-down"></span>'
+            }
 
         });
     </script>
 
-
-
 </body>
-
 </html>
