@@ -13,7 +13,7 @@
     <div class="container">
     <div class="row">
         <div class="col-12">
-            <div class="card">
+            <div class="card mt-4">
                 <form method="POST">
                     @csrf
                     <div class="card-header text-center">
