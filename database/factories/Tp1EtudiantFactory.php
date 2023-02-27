@@ -23,7 +23,9 @@ class Tp1EtudiantFactory extends Factory
             'phone' => $this->faker->numerify('###-###-####'),
             'email' => $this->faker->unique()->safeEmail(),
             'date_de_naissance' => $this->faker->date($format = 'Y-m-d', $max = '2005-01-01'),
+            // refait ville_id avec cle etrangere de ville
             'ville_id' => $this->faker->numberBetween(1, 15),
+
         ];
     }
 }
